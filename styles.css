@@ -1,0 +1,142 @@
+/* LANDING PAGE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Raleway', sans-serif;
+}
+
+.landing {
+    min-height: 100vh;
+    background: url("./fog-7760708.jpg");
+    background-size: cover;
+    padding: 0rem 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-links li {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+#logo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.big-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    color: rgb(8, 8, 8);
+    box-shadow:10cqmax
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    background: rgb(165, 164, 164);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%)
+}
+
+.intro-text {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem; 
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+/* CONTACT PAGE */
+
+a {
+    text-decoration: none;
+    color: rgb(18, 18, 18);
+    border-radius: 10vh;
+    border-color: white;
+    z-index: 10;
+}
+
+a {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  background: hsl(60, 0%, 59%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  opacity: 0.5;
+}
+
+
+/* ABOUT PAGE */
+
+.para {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 80px;
+    
+}
+
+p {
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 1vh;
+    border-color: white;
+}
